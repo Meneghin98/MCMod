@@ -1,0 +1,46 @@
+modLoader="javafml" #mandatory
+
+loaderVersion="[31,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+
+issueTrackerURL="http://my.issue.tracker/" #optional
+
+[[mods]] #mandatory
+
+modId="bnmf" #mandatory
+
+version="1.15.2-0.0.1" #mandatory
+
+displayName="Test Mod" #mandatory
+
+#updateJSONURL="http://myurl.me/" #optional
+
+#displayURL="http://example.com/" #optional
+
+logoFile="examplemod.png" #optional
+
+#credits="made by me" #optional
+
+authors="Morte47" #optional
+
+description='''
+Simply adds more food
+'''
+
+[[dependencies.examplemod]] #optional
+
+    modId="forge" #mandatory
+
+    mandatory=true #mandatory
+
+    versionRange="[31,)" #mandatory
+
+    ordering="NONE"
+
+    side="BOTH"
+
+[[dependencies.examplemod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "X"
+  ],
+  "key": {
+    "X": {
+      "item": "bnmf:cardboard"
+    }
+  },
+  "result": {
+    "item": "bnmf:cardboard_box_small",
+    "count": 1
+  },
+  "group": "cardboard"
+}
