@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "bnmf:blocks/pear_sapling"
+  }
+}

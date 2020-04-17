@@ -2,11 +2,10 @@ package com.meneghin.morefood;
 
 import com.meneghin.morefood.init.ModItemGroups;
 import com.meneghin.morefood.init.ModItems;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.LeavesBlock;
-import net.minecraft.block.LogBlock;
+import com.meneghin.morefood.trees.MySaplingBlock;
+import net.minecraft.block.*;
 import net.minecraft.block.material.MaterialColor;
+import net.minecraft.block.trees.OakTree;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;
@@ -19,7 +18,6 @@ import net.minecraftforge.registries.IForgeRegistryEntry;
 @EventBusSubscriber(modid = MoreFood.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class ModEventSubscriber {
 
-
 	@SubscribeEvent
 	public static void onRegisterItems(RegistryEvent.Register<Item> event){
 		event.getRegistry().register(setup(new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "cardboard"));
@@ -28,7 +26,7 @@ public class ModEventSubscriber {
 		Food pear = (new Food.Builder()).hunger(4).saturation(0.7f).build();
 		event.getRegistry().register(setup(new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP).food(pear)), "pear"));
 		event.getRegistry().register(setup(new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "pear_sapling"));
-		event.getRegistry().register(setup(new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "apple_sapling"));
+		event.getRegistry().register(setup(new BlockItem(ModItems.APPLE_SAPLING, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "apple_sapling"));
 		event.getRegistry().register(setup(new BlockItem(ModItems.PEAR_LOG, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "pear_log"));
 		event.getRegistry().register(setup(new BlockItem(ModItems.PEAR_PLANKS, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "pear_planks"));
 		event.getRegistry().register(setup(new BlockItem(ModItems.PEAR_LEAVES, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "pear_leaves"));
@@ -36,6 +34,7 @@ public class ModEventSubscriber {
 
 	@SubscribeEvent
 	public static void onRegisterBlocks(RegistryEvent.Register<Block> event) {
+		event.getRegistry().register(setup(new MySaplingBlock(OakTree::new, Block.Properties.from(Blocks.OAK_SAPLING)), "apple_sapling"));
 		event.getRegistry().register(setup(new LogBlock(MaterialColor.WOOD, Block.Properties.from(Blocks.OAK_LOG)),"pear_log"));
 		event.getRegistry().register(setup(new Block(Block.Properties.from(Blocks.OAK_PLANKS)),"pear_planks"));
 		event.getRegistry().register(setup(new LeavesBlock(Block.Properties.from(Blocks.OAK_LEAVES)),"pear_leaves"));

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "bnmf:items/pear_sapling"
+    "layer0": "bnmf:blocks/pear_sapling"
   }
 }

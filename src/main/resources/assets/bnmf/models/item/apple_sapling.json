@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "bnmf:items/apple_sapling"
+    "layer0": "bnmf:blocks/apple_sapling"
   }
 }
