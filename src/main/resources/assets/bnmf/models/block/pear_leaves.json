@@ -1,0 +1,6 @@
+{
+    "parent": "block/leaves",
+    "textures": {
+        "all": "bnmf:blocks/pear_tree_leaves"
+    }
+}

@@ -15,4 +15,7 @@ public class ModItems {
 	public static final Item APPLE_SAPLING = null;
 
 	public static final Block PEAR_LOG = null;
+	public static final Block PEAR_PLANKS = null;
+	public static final Block PEAR_LEAVES = null;
+
 }

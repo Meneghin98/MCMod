@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "bnmf:block/pear_log" }
+    "axis=y":    { "model": "bnmf:block/pear_log" },
+    "axis=z":     { "model": "bnmf:block/pear_log", "x": 90 },
+    "axis=x":     { "model": "bnmf:block/pear_log", "x": 90, "y": 90 }
   }
 }
