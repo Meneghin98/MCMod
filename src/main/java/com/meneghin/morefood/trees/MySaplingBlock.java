@@ -42,10 +42,9 @@ public class MySaplingBlock extends BushBlock implements IGrowable {
 	}
 
 	@Override
-	public void func_225535_a_(ServerWorld world, Random rand, BlockPos pos, BlockState state) {
+	public void grow(ServerWorld world, Random rand, BlockPos pos, BlockState state) {
 		this.grow(world, pos, state, rand);
 	}
-
 
 	private void grow(ServerWorld world, BlockPos pos, BlockState state, Random rand) {
 		if (state.get(STAGE) == 0) {

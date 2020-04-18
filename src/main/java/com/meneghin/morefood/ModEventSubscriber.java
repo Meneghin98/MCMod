@@ -3,6 +3,7 @@ package com.meneghin.morefood;
 import com.meneghin.morefood.init.ModItemGroups;
 import com.meneghin.morefood.init.ModItems;
 import com.meneghin.morefood.trees.MySaplingBlock;
+import com.meneghin.morefood.trees.tree.PearTree;
 import net.minecraft.block.*;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.trees.OakTree;
