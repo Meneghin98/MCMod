@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": [
+    {
+      "item": "bnmf:pear_log"
+    }
+  ],
+  "result": "minecraft:charcoal",
+  "experience": 0.15
+}
