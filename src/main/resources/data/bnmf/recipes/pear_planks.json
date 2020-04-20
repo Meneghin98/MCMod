@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bnmf:pear_log"
+    }
+  ],
+  "result": {
+    "item": "bnmf:pear_planks",
+    "count": 4
+  },
+  "group": "cardboard"
+}
