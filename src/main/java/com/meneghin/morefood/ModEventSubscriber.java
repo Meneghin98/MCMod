@@ -2,8 +2,8 @@ package com.meneghin.morefood;
 
 import com.meneghin.morefood.init.ModItemGroups;
 import com.meneghin.morefood.init.ModItems;
+import com.meneghin.morefood.item.FuelBlockItem;
 import com.meneghin.morefood.trees.MySaplingBlock;
-import com.meneghin.morefood.trees.tree.PearTree;
 import net.minecraft.block.*;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.trees.OakTree;
@@ -28,8 +28,8 @@ public class ModEventSubscriber {
 		event.getRegistry().register(setup(new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP).food(pear)), "pear"));
 		event.getRegistry().register(setup(new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "pear_sapling"));
 		event.getRegistry().register(setup(new BlockItem(ModItems.APPLE_SAPLING, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "apple_sapling"));
-		event.getRegistry().register(setup(new BlockItem(ModItems.PEAR_LOG, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "pear_log"));
-		event.getRegistry().register(setup(new BlockItem(ModItems.PEAR_PLANKS, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "pear_planks"));
+		event.getRegistry().register(setup(new FuelBlockItem(ModItems.PEAR_LOG, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP), 300), "pear_log"));
+		event.getRegistry().register(setup(new FuelBlockItem(ModItems.PEAR_PLANKS, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP),300), "pear_planks"));
 		event.getRegistry().register(setup(new BlockItem(ModItems.PEAR_LEAVES, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "pear_leaves"));
 	}
 
