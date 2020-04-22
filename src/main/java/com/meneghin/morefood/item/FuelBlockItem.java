@@ -13,6 +13,11 @@ public class FuelBlockItem extends BlockItem {
 		this.burnTime = burnTime;
 	}
 
+	public FuelBlockItem(Block blockIn, Properties builder, Integer burnTime) {
+		super(blockIn, builder);
+		this.burnTime = burnTime;
+	}
+
 	@Override
 	public int getBurnTime(ItemStack itemStack) {
 		return burnTime;
